@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>get post</title>
+</head>
+<body>
+{#context={'uname':uname,'upwd':upwd,'ugender':ugender,'uhobby':uhobby}#}
+
+{{uname}}<br>
+{{upwd}}<br>
+{{ugender}}<br>
+{{uhobby}}<br>
+
+<ul>
+{% for i in uhobby %}
+    <li>{{ i }} </li>
+{% endfor %}
+</ul>
+
+</body>
+</html>

@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>index</title>
 </head>
 <body>
+{#{{ b }}<br>#}
+{#<a href="/delete/">delete</a>#}
+<ul>
+    {% for i in b %}
+        <li>{{ i.btitle }} <a href="/delete/{{ i.id }}">delete</a></li>
+    {% endfor %}
 
+</ul>
 </body>
 </html>
